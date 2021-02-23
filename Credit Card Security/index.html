@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Security</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Credit Card Security Check</h1>
+    <hr></hr>
+    <p>     Ever wondered if your credit card is in a hacker's database? Well, you can easily find out now with our simple and secure tool! All you need to do is enter it's information here, and we will scan thousands of hacker databases to see if any of them have a match for yours.</p>
+    <form class="info" action="results.html">
+        <div>
+            <label for="card-num">Card Number:</label>
+            <input type="text" placeholder="0000-0000-0000-0000" name="card-num" id="card-num" minlength="16" maxlength="16">
+        </div>
+
+        <div>
+            <label for="cardholder-name">Cardholder Name:</label>
+            <input type="text" placeholder="John Doe" name="cardholder-name" id="cardholder-name" minlength="2" maxlength="50">
+        </div>
+
+        <div>
+            <label for="expiration">Expiration Date:</label>
+            <input type="month" name="expiration" id="expiration">
+        </div>
+
+        <div>
+            <label for="cvv">CVV:</label>
+            <input type="text" placeholder="123" name="cvv" id="cvv" minlength="3" maxlength="3">
+        </div>
+
+        <div>
+            <label for="postal">Postal Code:</label>
+            <input type="text" placeholder="12345" name="postal" id="postal" minlength="5" maxlength="5">
+        </div>
+
+        <div>
+            <button type="submit">Scan Database</button>
+        </div>
+    </form>
+</body>
+</html>
